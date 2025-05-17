@@ -1,0 +1,30 @@
+{
+  "name": "learn_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twaozann01/learn_node.git"
+  },
+  "keywords": [
+    "learn",
+    "nodejs"
+  ],
+  "author": "HoangSon26",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twaozann01/learn_node/issues"
+  },
+  "homepage": "https://github.com/twaozann01/learn_node#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
