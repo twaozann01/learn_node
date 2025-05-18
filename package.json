@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resource/scss/ --output src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,9 +27,15 @@
     "express": "^5.1.0",
     "express-handlebars": "^8.0.2"
   },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
     "sass": "^1.89.0"
   }
 }
